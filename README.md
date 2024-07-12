@@ -85,7 +85,7 @@ To train the model, run the `mistral_trainer.py` file. For predictions, use the 
 
 ## Conclusion and Future Work
 
-This README outlines the steps to fine-tune the Mistral 7B model using LoRA and other techniques to enhance its performance on specific tasks. Future work could involve exploring additional fine-tuning methods and further optimizing the model for different use cases. For more details, refer to the Mistral 7B [research paper](https://arxiv.org/pdf/2310.06825.pdf).
+This README outlines the steps to fine-tune the Mistral 7B model using LoRA and other techniques to enhance its performance on specific tasks. Future work could involve exploring additional fine-tuning methods and further optimizing the model for different use cases. For more details, refer to the Mistral 7B [research paper](https://exnrt.com/blog/ai/mistral-7b-fine-tuning/).
 
 ---
 
