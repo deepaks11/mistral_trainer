@@ -106,7 +106,7 @@ def train_mistral_model(huggingface_token, base_model, dataset_path, save_model)
 
 # Example usage
 train_mistral_model(
-    huggingface_token='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',
+    huggingface_token='Your API Token',
     base_model="mistralai/Mistral-7B-Instruct-v0.2",
     dataset_path="dataset/story.json",
     save_model="models/Mistral-7b-v2-story_50a_r256"
