@@ -1,8 +1,12 @@
+Certainly! Here's the full README with the added hardware requirements section:
+
+---
+
 # Fine-Tuning Mistral 7B Model
 
 ## Introduction
 
-This repository contains the code and instructions for fine-tuning the Mistral 7B model for natural language processing tasks. Mistral 7B, developed by Mistral.AI, is a powerful large language model (LLM) capable of generating coherent text and performing various NLP tasks. By fine-tuning this model, we aim to enhance its performance on specific tasks using custom datasets.
+This repository contains the code and instructions for fine-tuning the Mistral 7B-instruct model for natural language processing tasks. Mistral 7B, developed by Mistral.AI, is a powerful large language model (LLM) capable of generating coherent text and performing various NLP tasks. By fine-tuning this model, we aim to enhance its performance on specific tasks using custom datasets.
 
 ## Overview of Mistral 7B Instruct-V0.2
 
@@ -19,9 +23,21 @@ Mistral-7B-instruct-v0.2 is a transformer model with the following architecture 
 
 Fine-tuning involves using custom datasets to improve a pre-trained model's performance on specific tasks. This process updates the model's parameters to reflect acquired knowledge, making it more suitable for specific tasks. Full fine-tuning can be expensive, but methods like LoRA (Low-Rank Adaptation) make it more efficient and accessible.
 
+## Hardware Requirements
+
+Before setting up the environment, ensure your system meets the following hardware specifications:
+
+- **GPU**: NVIDIA RTX 4060 Ti
+- **RAM**: 16 GB
+- **CPU**: Intel(R) Core(TM) i9-14900K
 ## Setup and Installation
 
 Install the essential libraries required for fine-tuning the Mistral 7B model. Ensure all dependencies are up-to-date to avoid errors during the process.
+
+```bash
+pip install transformers trl accelerate torch bitsandbytes peft datasets
+# Ensure to install the correct version of torch for your GPU and CUDA version
+```
 
 ## Dataset Preparation
 
@@ -62,6 +78,10 @@ Set up the necessary configurations and hyperparameters for training, including 
 ### Training the Model
 
 Prepare the model for training with LoRA. Fine-tune the model using supervised fine-tuning techniques to adjust its weights based on task-specific loss.
+
+## Running the Code
+
+To train the model, run the `mistral_trainer.py` file. For predictions, use the `pipe.py` file.
 
 ## Conclusion and Future Work
 
